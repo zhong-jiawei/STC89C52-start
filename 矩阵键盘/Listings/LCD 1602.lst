@@ -1,0 +1,43 @@
+C51 COMPILER V9.60.7.0   LCD_1602                                                          11/28/2026 00:02:38 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE LCD_1602
+OBJECT MODULE PLACED IN .\Objects\LCD 1602.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE LCD 1602.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\
+                    -LCD 1602.lst) TABS(2) OBJECT(.\Objects\LCD 1602.obj)
+
+line level    source
+
+   1           void LCD_Init()
+   2            {
+   3   1          ;
+   4   1        }
+   5            void LCD_showString(int a,int b,char c)
+   6            {
+   7   1          ;
+   8   1        }
+*** WARNING C280 IN LINE 5 OF LCD 1602.c: 'a': unreferenced local variable
+*** WARNING C280 IN LINE 5 OF LCD 1602.c: 'b': unreferenced local variable
+*** WARNING C280 IN LINE 5 OF LCD 1602.c: 'c': unreferenced local variable
+   9            void LCD_showNum(int a,int b,char c,int d)
+  10            {
+  11   1          ;
+  12   1        }
+*** WARNING C280 IN LINE 9 OF LCD 1602.c: 'a': unreferenced local variable
+*** WARNING C280 IN LINE 9 OF LCD 1602.c: 'b': unreferenced local variable
+*** WARNING C280 IN LINE 9 OF LCD 1602.c: 'c': unreferenced local variable
+*** WARNING C280 IN LINE 9 OF LCD 1602.c: 'd': unreferenced local variable
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     23    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      12
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  7 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,45 @@
+C51 COMPILER V9.60.7.0   MAIN                                                              11/28/2026 00:03:31 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main
+                    -.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include <REGX52.H>
+   2          #include "Delay.h"
+   3          #include "MatrixKey.h"
+   4          #include "LCD 1602.h"
+*** WARNING C323 IN LINE 1 OF LCD 1602.h: newline expected, extra characters found
+   5          unsigned char KeyNum;
+   6          
+   7          void main()
+   8          {
+   9   1        LCD_Init();
+  10   1        LCD_showString(1,1,"MatrixKey:");
+*** WARNING C214 IN LINE 10 OF main.c: 'Argument': conversion: pointer to non-pointer
+  11   1        while(1)
+  12   1        {
+  13   2          KeyNum=MatrixKey();
+  14   2          if(KeyNum)
+  15   2          {
+  16   3            LCD_showNum(2,1,KeyNum,2);
+  17   3          }
+  18   2        }
+  19   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     45    ----
+   CONSTANT SIZE    =     11    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  2 WARNING(S),  0 ERROR(S)
